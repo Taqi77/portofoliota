@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Mahasiswa Teknik Informatika</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#4A148C',  // Deep Purple
+                        'primary-light': '#7C4DFF', // Lighter Purple
+                        'accent': '#E0E0E0',        // Light Gray
+                        'background-dark': '#121212', // Very Dark Background
+                        'background-light': '#1E1E1E' // Slightly Lighter Dark
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+            background-color: #121212;
+            color: #E0E0E0;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #7C4DFF, #4A148C);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background-dark font-sans leading-normal tracking-normal">
+    <!-- Navigasi -->
+    <nav class="bg-background-light shadow-lg fixed w-full z-10 top-0">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold gradient-text">Taqi Akbar</div>
+            <div class="space-x-4 text-accent">
+                <a href="#beranda" class="hover:text-primary-light transition">Beranda</a>
+                <a href="#tentang" class="hover:text-primary-light transition">Tentang</a>
+                <a href="#keahlian" class="hover:text-primary-light transition">Keahlian</a>
+                <a href="#projek" class="hover:text-primary-light transition">Projek</a>
+                <a href="#kontak" class="hover:text-primary-light transition">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Beranda -->
+    <section id="beranda" class="h-screen flex items-center bg-gradient-to-br from-primary-dark to-background-dark text-accent pt-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="bg-background-light rounded-full w-48 h-48 mx-auto mb-6 flex items-center justify-center border-4 border-primary-light overflow-hidden">  
+                <img   
+                src="images/foto-profil.jpg.png"   
+                alt="Taqi Akbar"   
+                class="w-full h-full object-cover object-center"  
+            >
+            </div>
+            <h1 class="text-4xl font-bold mb-4 gradient-text">Taqi Akbar Taufiqurrahman</h1>
+            <p class="text-xl mb-6">Mahasiswa Teknik Informatika | Pecinta Teknologi</p>
+            <div class="space-x-4">
+                <a href="#projek" class="bg-primary-light text-white px-6 py-3 rounded-full hover:bg-primary-dark transition">Lihat Projek</a>
+                <a href="#kontak" class="border-2 border-primary-light text-primary-light px-6 py-3 rounded-full hover:bg-primary-light hover:text-white transition">Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="tentang" class="py-20 bg-background-light">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8 gradient-text">Tentang Saya</h2>
+            <p class="text-accent mb-6">
+                Saya, Taqi dari Mojokerto, Jawa Timur, adalah mahasiswa Teknik Informatika di Universitas BINUS yang ambil streaming database technology, memiliki passion mendalam di bidang pengembangan backend, desain database, cloud, dan arsitektur sistem, dengan semangat berkelanjutan untuk mengeksplorasi teknologi mutakhir dan mengembangkan solusi inovatif yang praktis dan scalable.            </p>
+            </p>
+            <div class="flex justify-center">
+                <a href="assets/cv-taqi-akbar.pdf" 
+                   download="CV_Taqi_Akbar" 
+                   class="bg-primary-light text-white px-6 py-3 rounded-full hover:bg-primary-dark transition">
+                   Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Keahlian -->
+    <section id="keahlian" class="py-20 bg-background-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Keahlian</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-background-light p-6 rounded-lg shadow-md text-center border border-primary-light">
+                    <i class="fab fa-html5 text-5xl text-primary-light mb-4"></i>
+                    <h3 class="font-bold mb-2 text-accent">Web Development</h3>
+                    <p class="text-primary-light">HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="bg-background-light p-6 rounded-lg shadow-md text-center border border-primary-light">
+                    <i class="fab fa-python text-5xl text-primary-light mb-4"></i>
+                    <h3 class="font-bold mb-2 text-accent">Pemrograman</h3>
+                    <p class="text-primary-light">Python, Java, C++, JavaScript</p>
+                </div>
+                <div class="bg-background-light p-6 rounded-lg shadow-md text-center border border-primary-light">
+                    <i class="fas fa-database text-5xl text-primary-light mb-4"></i>
+                    <h3 class="font-bold mb-2 text-accent">Database</h3>
+                    <p class="text-primary-light">MySQL, PostgreSQL, MongoDB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projek -->
+    <section id="projek" class="py-20 bg-background-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Projek Saya</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-background-dark rounded-lg overflow-hidden border border-primary-light">
+                    <div class="bg-primary-light h-48 flex items-center justify-center">
+                        <img   
+                                src="images/bookexchange.png"   
+                                alt="Book Exchange Project"   
+                                class="w-full h-full object-cover object-center"  
+                        >  
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-accent">Book Exchange</h3>
+                        <p class="text-primary-light mb-4">
+                            Platform e-commerce buku berbasis Laravel 11 yang menyediakan katalog buku digital komprehensif, memungkinkan pengguna menelusuri, membeli dengan anatramuka yang sederhana.</p>
+                        <div class="flex justify-between">
+                            <a href="https://github.com/altimitmineos/bookexchangeAOL" class="text-accent hover:text-primary-light">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-background-dark rounded-lg overflow-hidden border border-primary-light">
+                    <div class="bg-primary-light h-48 flex items-center justify-center">
+                        <img   
+                                src="images/doitnow.png"   
+                                alt="do it now Project"   
+                                class="w-full h-full object-cover object-center"  
+                        >  
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-accent">Do It Now</h3>
+                        <p class="text-primary-light mb-4">Aplikasi DoItNow adalah sebuah platform manajemen tugas sederhana namun powerful yang dikembangkan menggunakan Laravel 11. Aplikasi ini memungkinkan pengguna untuk membuat, mengelola, dan melacak tugas-tugas mereka dengan mudah dan efisien.</p>
+                        <div class="flex justify-between">
+                            <a href="https://github.com/Taqi77/Do-it" class="text-accent hover:text-primary-light">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-background-dark rounded-lg overflow-hidden border border-primary-light">
+                    <div class="bg-primary-light h-48 flex items-center justify-center">
+                        <img   
+                                src="images/koyamart.png"   
+                                alt="koyamart"   
+                                class="w-full h-full object-cover object-center"  
+                        > 
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-accent">KoyaMart</h3>
+                        <p class="text-primary-light mb-4">suatu website e-commerce yang bisa kita atur untuk halaman landing page dan juga bisa atur untuk produk di role admin</p>
+                        <div class="flex justify-between">
+                            <a href="https://github.com/Taqi77/koyamart" class="text-accent hover:text-primary-light">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-background-dark rounded-lg overflow-hidden border border-primary-light">
+                    <div class="bg-primary-light h-48 flex items-center justify-center">
+                        <img   
+                        src="images/adminku.png"   
+                        alt="adminku"   
+                        class="w-full h-full object-cover object-center"  
+                >                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-accent">adminku</h3>
+                        <p class="text-primary-light mb-4">suatu website untuk role admin yang lebih fokus ke proses CRUD</p>
+                        <div class="flex justify-between">
+                            <a href="https://github.com/Taqi77/CRUD-admin-Laravel" class="text-accent hover:text-primary-light">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-background-dark rounded-lg overflow-hidden border border-primary-light">
+                    <div class="bg-primary-light h-48 flex items-center justify-center">
+                        <i class="fas fa-laptop-code text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-accent">Nama Projek 3</h3>
+                        <p class="text-primary-light mb-4">Deskripsi singkat projek yang Anda kerjakan.</p>
+                        <div class="flex justify-between">
+                            <a href="#" class="text-primary-light hover:underline">Lihat Demo</a>
+                            <a href="#" class="text-accent hover:text-primary-light">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-background-dark rounded-lg overflow-hidden border border-primary-light">
+                    <div class="bg-primary-light h-48 flex items-center justify-center">
+                        <i class="fas fa-laptop-code text-6xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-accent">Nama Projek 3</h3>
+                        <p class="text-primary-light mb-4">Deskripsi singkat projek yang Anda kerjakan.</p>
+                        <div class="flex justify-between">
+                            <a href="#" class="text-primary-light hover:underline">Lihat Demo</a>
+                            <a href="#" class="text-accent hover:text-primary-light">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="py-20 bg-background-dark">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8 gradient-text">Hubungi Saya</h2>
+            <form class="max-w-lg mx-auto">
+                <input type="text" placeholder="Nama Anda" class="w-full mb-4 p-3 rounded bg-background-light border border-primary-light text-accent focus:outline-none focus:ring-2 focus:ring-primary-light">
+                <input type="email" placeholder="Email Anda" class="w-full mb-4 p-3 rounded bg-background-light border border-primary-light text-accent focus:outline-none focus:ring-2 focus:ring-primary-light">
+                <textarea placeholder="Pesan Anda" class="w-full mb-4 p-3 rounded bg-background-light border border-primary-light text-accent focus:outline-none focus:ring-2 focus:ring-primary-light" rows="4"></textarea>
+                <button type="submit" class="bg-primary-light text-white px-8 py-3 rounded-full hover:bg-primary-dark transition">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-background-light py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://github.com/Taqi77" class="text-2xl text-primary-light hover:text-accent transition"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/taqi-akbar-taufiqurrahman/" class="text-2xl text-primary-light hover:text-accent transition"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/taqiakbar227/" class="text-2xl text-primary-light hover:text-accent transition"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="text-accent">&copy; 2024 Nama Anda. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
